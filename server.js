@@ -7,10 +7,6 @@ const db = require('./Db');
 const app = express();
 
 
-app.get('/api/notes', (req, res) => res.json(db));
-
-
-
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, 'templates', 'notes.html'));
 })
@@ -18,6 +14,10 @@ app.get('/notes', (req, res) => {
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, 'templates', 'index.html'));
 })
+
+
+app.get('/api/notes', (req, res) => res.json(db));
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server started on PORT: ${PORT}`));
