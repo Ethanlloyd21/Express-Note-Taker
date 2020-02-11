@@ -3,7 +3,11 @@ const path = require('path');
 const fs = require('fs');
 const util = require('util');
 const writeFiles = util.promisify(fs.writeFile);
+const db = require('./Db');
 const app = express();
+
+
+app.get('/api/notes', (req, res) => res.json(db));
 
 
 
