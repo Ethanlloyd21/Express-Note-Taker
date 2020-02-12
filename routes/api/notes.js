@@ -1,4 +1,5 @@
 const express = require('express');
+const uuid = require('uuid');
 const router = express.Router();
 const db = require('../../db/Db');
 
@@ -16,24 +17,33 @@ router.get('/:id', (req, res) => {
     }
 });
 
-// Create db
+// Create an input
 router.post('/', (req, res) => {
-    res.send(req.body);
+    const newDB = {
+        id: uuid.v4(),
+        title: req.body.title,
+        text: req.body.text
+    };
+    //User must enter both tittle and text, if not the program will throw an error
+    if (!newDB.title || !newDB.text) return res.status(400).json({ msg: 'Please fill in Title and Body Text' });
+
+    db.push(newDB);
+    res.json(db);
 
 });
 
-// Update db
-router.put('/api/notes:id', (req, res) => {
+// Update input
+router.put('/:id', (req, res) => {
     const found = db.some(db => db.id === parseInt(req.params.id));
 
     if (found) {
         const updatedb = req.body;
         db.forEach()(db => {
-            if (db.id == parseInt(req.db.id)) {
-                db.tittle = updatedb.titte ? updatedb.title : db.name;
+            if (db.id == parseInt(req.params.id)) {
+                db.title = updatedb.title ? updatedb.title : db.title;
                 db.text = updatedb.text ? updatedb.text : db.text;
 
-                res.json({ msg: 'db updated', db });
+                res.json({ msg: 'Information updated', db });
             }
         });
     } else {
@@ -41,8 +51,8 @@ router.put('/api/notes:id', (req, res) => {
     }
 });
 
-// Delete db
-router.delete('/api/notes:id', (req, res) => {
+// Delete input
+router.delete('/:id', (req, res) => {
     const found = db.some(db => db.id === parseInt(req.params.id));
 
     if (found) {
