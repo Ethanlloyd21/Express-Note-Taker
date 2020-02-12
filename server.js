@@ -11,14 +11,9 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
-//app.use(express.static(path.join(__dirname, 'public')));
-
 app.get('/notes/css', (req, res) => res.sendFile(path.join(__dirname, './public/assets/css/style.css')));
 
 app.get('/notes/js', (req, res) => res.sendFile(path.join(__dirname, './public/assets/js/index.js')));
-
-
 
 // Get routes for notes.html
 app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, 'public', 'notes.html')));
