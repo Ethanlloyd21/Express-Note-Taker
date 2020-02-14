@@ -17,3 +17,33 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
 
+## Install
+* npm install
+* npm i express
+* npm init
+* npm install --save-dev nodemon
+
+## Dependencies
+* inquierer 
+* express
+* nodemon
+
+## Run
+* node server.js
+* npm run start
+
+## Built with
+
+* HTML
+* JavaScript
+* CSS
+* Bootstrap
+* Express
+
+# Demo
+
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+

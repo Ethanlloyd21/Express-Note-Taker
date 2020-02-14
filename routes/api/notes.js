@@ -39,8 +39,8 @@ router.delete('/:id', (req, res) => {
 
     let id = parseInt(req.params.id);
     for (let i = 0; i < db.length; ++i) {
-        const note = db[i];
-        if (id === note.id) {
+        const placement = db[i];
+        if (id === placement.id) {
             db.splice(i, 1);
             break;
         }
