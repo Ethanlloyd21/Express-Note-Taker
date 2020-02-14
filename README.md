@@ -32,6 +32,14 @@ For users that need to keep track of a lot of information, it's easy to forget o
 * node server.js
 * npm run start
 
+## Built with
+
+* HTML
+* JavaScript
+* CSS
+* Bootstrap
+* Express
+
 # Demo
 
 
