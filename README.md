@@ -42,7 +42,7 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 # Demo
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+[![Demo CountPages alpha](https://drive.google.com/file/d/11OZSP9EabOkOmr3W5aypQbuU3MKTx4lg/view)](https://drive.google.com/file/d/11OZSP9EabOkOmr3W5aypQbuU3MKTx4lg/view)
 
 
 # License
