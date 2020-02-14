@@ -30,7 +30,12 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 ## Run
 * node server.js
-or
 * npm run start
+
+# Demo
+
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 
