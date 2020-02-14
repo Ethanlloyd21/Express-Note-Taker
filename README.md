@@ -23,3 +23,8 @@ For users that need to keep track of a lot of information, it's easy to forget o
 * npm init
 * npm install --save-dev nodemon
 
+## Dependencies
+* inquierer 
+* nodemon
+
+
