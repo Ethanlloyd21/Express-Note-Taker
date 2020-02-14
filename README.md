@@ -40,9 +40,11 @@ For users that need to keep track of a lot of information, it's easy to forget o
 * Bootstrap
 * Express
 
-# Demo
+## Demo
 ![](img/index.PNG)
 ![](img/notes.PNG)
+
+# Video
 <a href="https://drive.google.com/file/d/11OZSP9EabOkOmr3W5aypQbuU3MKTx4lg/view" target="_blank">Click here for a video demo</a>
 
 
