@@ -26,8 +26,6 @@ router.post('/', (req, res) => {
         title: req.body.title,
         text: req.body.text
     };
-
-
     db.push(newDB);
     res.json(db);
 
@@ -45,7 +43,6 @@ router.delete('/:id', (req, res) => {
             break;
         }
     }
-
     res.json(db);
 
 });

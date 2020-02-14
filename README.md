@@ -41,7 +41,8 @@ For users that need to keep track of a lot of information, it's easy to forget o
 * Express
 
 # Demo
-
+![](img/index.PNG)
+![](img/notes.PNG)
 <a href="https://drive.google.com/file/d/11OZSP9EabOkOmr3W5aypQbuU3MKTx4lg/view" target="_blank">Click here for a video demo</a>
 
 
