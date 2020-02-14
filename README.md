@@ -42,6 +42,8 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 # Demo
 
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details
