@@ -25,6 +25,12 @@ For users that need to keep track of a lot of information, it's easy to forget o
 
 ## Dependencies
 * inquierer 
+* express
 * nodemon
+
+## Run
+* node server.js
+or
+* npm run start
 
 
