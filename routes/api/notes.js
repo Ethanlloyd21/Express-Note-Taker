@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../db/Db');
+const path = require('path');
+const db = require('../../db/db.json');
+const fs = require("fs");
 
 // Gets all text in db json file
 router.get('/', (req, res) => res.json(db));
@@ -26,7 +28,11 @@ router.post('/', (req, res) => {
         title: req.body.title,
         text: req.body.text
     };
+
     db.push(newDB);
+    fs.writeFile(path.join(__dirname, "../../db/db.json"), JSON.stringify(db), err => {
+        if (err) throw err;
+    });
     res.json(db);
 
 });
@@ -38,11 +44,11 @@ router.delete('/:id', (req, res) => {
     let id = parseInt(req.params.id);
     for (let i = 0; i < db.length; ++i) {
         const placement = db[i];
-        if (id === placement.id) {
-            db.splice(i, 1);
-            break;
-        }
+        if (id === placement.id) db.splice(i, 1);
     }
+    fs.writeFile(path.join(__dirname, "../../db/db.json"), JSON.stringify(db), err => {
+        if (err) throw err;
+    });
     res.json(db);
 
 });
