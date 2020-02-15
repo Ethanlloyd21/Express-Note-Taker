@@ -40,6 +40,10 @@ For users that need to keep track of a lot of information, it's easy to forget o
 * Bootstrap
 * Express
 
+## Deployment
+
+* deployed via Herokuapp.com ---> <a href="https://lloyd-note-taker.herokuapp.com/" target="_blank">Launch the app</a>
+
 ## Demo
 ![](img/index.PNG)
 ![](img/notes.PNG)
