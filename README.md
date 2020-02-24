@@ -51,6 +51,8 @@ For users that need to keep track of a lot of information, it's easy to forget o
 # Video
 <a href="https://drive.google.com/file/d/11OZSP9EabOkOmr3W5aypQbuU3MKTx4lg/view" target="_blank">Click here for a video demo</a>
 
+## Author
+* Lloyd Marcelino, 2020
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details
